@@ -14,7 +14,7 @@ export default class UI {
 		this.weather_stats.style.display = 'block';
 		this.location.innerText = weatherData.name + ', ' + weatherData.sys.country;
 		this.temp_kind.innerText = weatherData.weather[0].main;
-		this.weather_img.setAttribute('src', `http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`);
+		this.weather_img.setAttribute('src', `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`);
 
 		this.rel_hum.innerText = `Relative Humidity : ${weatherData.main.humidity}%`;
 		this.feels_like.innerText = `Feels Like : ${this.convert(weatherData.main.feels_like).toPrecision(2)}℃`;

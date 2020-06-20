@@ -1,12 +1,12 @@
 .modal {
 	width: 80% !important;
-	height: 55% !important;
+	height: 70% !important;
 }
 .modal .btn {
 	margin-top: 1rem !important;
 }
 .card {
-	min-height: 80% !important;
+	min-height: 120vh !important;
 	width: 95%;
 }
 .l-heading {
@@ -19,6 +19,19 @@
 #weather-card {
 	margin: 2rem auto !important;
 }
+#weather-card .btn {
+	margin-top: 2.5rem !important;
+}
+#weather-card .l-heading {
+	margin-bottom: 3.5rem;
+}
+/* Iphone 10 and longer screens */
+@media (min-height: 800px) {
+	.card {
+		min-height: 100vh !important;
+		width: 95%;
+	}
+}
 /* Iphone 5 and other smaller screens*/
 @media (max-width: 350px) {
 	.modal {
@@ -30,7 +43,7 @@
 		margin-top: 1rem !important;
 	}
 	.card {
-		min-height: 100% !important;
+		min-height: 120vh !important;
 		width: 95%;
 	}
 	body {
@@ -38,5 +51,8 @@
 	}
 	.lead {
 		font-size: 1rem !important;
+	}
+	#weather-card .btn {
+		margin-bottom: 1rem;
 	}
 }
