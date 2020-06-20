@@ -1,0 +1,42 @@
+.modal {
+	width: 80% !important;
+	height: 55% !important;
+}
+.modal .btn {
+	margin-top: 1rem !important;
+}
+.card {
+	min-height: 80% !important;
+	width: 95%;
+}
+.l-heading {
+	font-size: 1.5rem !important;
+	text-align: center;
+}
+.lead {
+	font-size: 1.5rem !important;
+}
+#weather-card {
+	margin: 2rem auto !important;
+}
+/* Iphone 5 and other smaller screens*/
+@media (max-width: 350px) {
+	.modal {
+		text-align: center;
+		width: 80% !important;
+		height: 80% !important;
+	}
+	.modal .btn {
+		margin-top: 1rem !important;
+	}
+	.card {
+		min-height: 100% !important;
+		width: 95%;
+	}
+	body {
+		overflow-y: visible !important;
+	}
+	.lead {
+		font-size: 1rem !important;
+	}
+}

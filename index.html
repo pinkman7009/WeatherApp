@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" media="screen and (max-width:700px)" href="css/mobile.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Weather Predictor</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="main-nav">
+    <div class="container">
+      <img src="img/weather-forecast-symbol-v7o.png" alt="">
+      <h2>WeatherLand</h3>
+    </div>
+  </nav>
+  <!-- Main-Weather-Card -->
+  <div class="container weather-container">
+    <div id="weather-card" class="card">
+      <h2 class="l-heading">Check out the Weather of any location!</h2>
+      <h3 id="location" class="lead"></h3>
+      <h3 id="temperature-kind" class="lead"></h3>
+      <img src="" alt="" id="weather-type">
+      <ul id="weather-stats">
+        <li id="rel-hum"></li>
+        <li id="feels-like"></li>
+        <li id="max-temp"></li>
+        <li id="min-temp"></li>
+      </ul>
+
+      <button id="change-loc" class="btn">Select Location</button>
+
+    </div>
+  </div>
+  <div class="modal-bg">
+    <div class="modal">
+      <h2>Choose a Location</h2>
+      <form>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" id="city-name">
+        </div>
+        <div class="form-group">
+          <label for="state">Country</label>
+          <input type="text" id="state-name">
+        </div>
+      </form>
+      <button class="btn" id="check-weather">Check Weather</button>
+      <div class="close">x</div>
+    </div>
+  </div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
