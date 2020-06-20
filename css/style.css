@@ -193,3 +193,17 @@ form {
 .modal .btn {
 	margin-top: 2rem;
 }
+/* Media queries for landscape on smartphones*/
+@media (max-height: 500px) {
+	.card {
+		min-height: 200vh;
+	}
+	.modal {
+		min-height: 98vh;
+	}
+}
+@media (max-height: 375px) {
+	.card {
+		min-height: 200vh !important;
+	}
+}

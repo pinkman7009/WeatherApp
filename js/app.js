@@ -13,7 +13,7 @@ change_loc_btn.addEventListener('click', () => {
 	// To clear the Modal Input values and Errors if any
 	document.querySelector('#city-name').value = '';
 	document.querySelector('#state-name').value = '';
-	if (err) err.remove();
+	if (err) err.style.display = 'none';
 
 	// To add the modal active class
 	modal.classList.add('modal-bg-active');
@@ -48,10 +48,8 @@ const getUserData = (cityName, stateName) => {
 	weather.get(cityName).then((weatherData) => {
 		if (weatherData.message === 'city not found') {
 			flag = false;
-			console.log(flag);
 		} else ui.showUI(weatherData);
 	});
-	console.log(flag);
 };
 
 // On Load
