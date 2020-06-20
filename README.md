@@ -17,3 +17,5 @@ Fetches weather data of a location from the OpenWeatherMap API ( https://openwea
 2. CSS3
 3. Javascript 
 
+# Live Demo
+https://pinkman7009.github.io/WeatherApp/
