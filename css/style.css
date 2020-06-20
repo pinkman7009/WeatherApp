@@ -189,9 +189,10 @@ form {
 	width: 100%;
 	font-size: 1.2rem;
 	padding: 0.5rem;
+	border: #333 1px solid;
 }
 .modal form .form-group input[type='text']:focus {
-	outline: #333 2px solid;
+	outline: #111 2px solid;
 }
 .modal .btn {
 	margin-top: 2rem;
